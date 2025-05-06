@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
 
 
 .maruf{
@@ -57,7 +57,7 @@ ul:hover::after{
 
 
 
-.imm{
+/* .imm{
     width: 100%;
     height: 100vh;
     background-image: url(img/bodyimg.jpg);
@@ -65,7 +65,59 @@ ul:hover::after{
     background-position:50px 19px ;
     background-size: contain;
     
+} */
+
+
+
+ 
+
+ .slider{
+   position: relative;
+   width: 60%;
+   height: 300px;
+   overflow: hidden;
+   /* border-radius: 10px; */
+   /* box-shadow: -2px 18px 13px rgb(0, 0, 0,0.6); */
+/* border: 40px solid #192a56;   */
+} 
+
+ .slides{
+    display: flex;
+   /* min-width: 100%; */
+     /* height: 100%;  */
+
+  
+  transition: transform 0.5s ease-in-out;
+}  
+.slide{
+   min-width: 100%;
+   height: 100%;
+}  
+/* .controls{ 
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}  */
+
+/* button{
+    background:#1b146480 ;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #347062;
+    cursor: pointer;
+} */
+.font{
+    color:#130f40 ;
+ 
+    /* font-family: 'Segoe UI'; */
+   
+    /* font-family: "Saira", sans-serif; */
+
+    font-family: "Sofia Sans", sans-serif;
+ 
+    /* font-family: "Boldonse", system-ui; */
 }
-
-
-
