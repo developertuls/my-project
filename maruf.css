@@ -14,12 +14,14 @@
     font-family: "Big Shoulders Inline", sans-serif;
 }
 
-.box{
+ul{
     display: inline-block;
     position: relative;
 }
 
-.box::before, .box::after{
+
+
+ul::before,ul::after{
     content: "";
     display: block;
     position: absolute;
@@ -28,16 +30,121 @@
    
 }
 
-.box::after{
+
+
+ ul::after{
+left: 50%;
+bottom: -10px;
+
+width: 0;
+height: 2px;
+
+}  
+/* ul::before{
+top: 0;
+right: 2px;
+bottom:0;
+width: 0;
+height: 2px;
+
+}  */
+
+
+
+
+ul:hover::after{
+    width: 100%;
+    left: 0;
+    
+  
+
+    
+   
+   
+   
+    
+ 
+   
+   
+
+}
+ul:hover::before{
+    width: 100%;
+
+  
+ 
+   
+   
+
+}
+
+
+
+
+
+
+/* buttom-effect */
+ /* .hover-effect{
+    display: inline-block;
+    position: relative;
+}
+
+span{
+    display: inline-block;
+    position: relative;
+}
+
+.hover-effect::before,.hover-effect::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background:#62c50c ;
+    transition: 0.4s;
+   
+}
+
+span::before,span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background:#01dc08 ;
+    transition: 0.4s;
+      
+}
+
+span::before{
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0; 
+}
+
+span::after{
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 0;  
+    
+}
+
+span:hover::before{
+    height: 100%;
+}
+
+span:hover::after{
+    height: 100%;
+}
+
+.hover-effect::after{
 left: 0;
-bottom: -1px;
+bottom: 20px;
 width: 0;
 height: 2px;
 
 } 
-.box::before{
-    top: 0;
-right: 2px;
+.hover-effect::before{
+top: 0;
+right: 0;
 bottom: 0;
 width: 0;
 height: 2px;
@@ -47,7 +154,7 @@ height: 2px;
 
 
 
-.box:hover::after{
+.hover-effect:hover::after{
     width: 100%;
    
     
@@ -56,14 +163,19 @@ height: 2px;
    
 
 }
-.box:hover::before{
+.hover-effect:hover::before{
     width: 100%;
   
  
    
    
 
-}
+}  */
+
+
+
+
+
 
  /* .bg::before{
     content: "";
@@ -91,9 +203,9 @@ height: 2px;
 
  .slider{
    position: relative;
-   width: 60%;
-   height: 300px;
-   overflow: hidden;
+   width: 100%;
+   height: 400px;
+   /* overflow: hidden; */
    /* border-radius: 10px; */
    box-shadow: -2px 18px 13px rgb(0, 0, 0,0.6);
 /* border: 40px solid #192a56;   */
@@ -101,7 +213,7 @@ height: 2px;
 
  .slides{
     display: flex;
-   /* min-width: 100%; */
+   min-width: 100%;
      /* height: 100%;  */
 
   
@@ -110,6 +222,7 @@ height: 2px;
 .slide{
    min-width: 100%;
    height: 100%;
+   /* overflow: hidden; */
 }  
 /* .controls{ 
     position: absolute;
@@ -146,6 +259,7 @@ h2{
 }
 
 .box{
+    
     /* background-image: linear-gradient(#130f40); */
    
     font-family: sans-serif;
@@ -159,20 +273,16 @@ h2{
     
     box-shadow: -2px 18px 13px rgb(0, 0, 0,0.6);
     transition: 1.0s;
+ 
 }
+
 
  .m{
     /* box-shadow: -2px 18px 13px rgb(0, 0, 0,0.6); */
     /* background-image: linear-gradient(#130f40); */
     
 } 
-.box:hover h4{
-    /* background:#1B1464 ; */
-    border-radius:30px;
-    /* color: #fff; */
-    transition: 1.0s;
-   
-}
+
 
 .btn{
     visibility: hidden;
@@ -181,4 +291,36 @@ h2{
 .box:hover .btn{
 visibility: visible;
 transition-delay: 1.0s;
+}
+
+.box:hover img{
+    background: #130f40;
+    box-shadow: -2px -5px 13px  #77758e;
+    border-radius: 6px;
+    
+
+        /* animation: pulse 2s infinite; */
+
+}
+
+.box:hover img{
+  
+   transition: 1.0s;
+    transform:translatey(20px) ;
+    transition-delay: 1.0s;
+
+        /* animation: bounce 2s infinite; */
+
+}
+h4{
+    text-decoration: #ef5777;
+    box-sizing: border-box;
+}
+
+h1{
+    /* overflow: hidden; */
+}
+.slider{
+    overflow: hidden;
+    /* box-sizing: border-box; */
 }
