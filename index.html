@@ -9,34 +9,63 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 </head>
 <body class="">
-    
-<nav class="bg shadow-xl ">
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
+  <style>
+    /* default transparent */
+    #navbar {
+      transition: background-color 0.2s ease;
+      transition: color 0.2s ease;
+    }
+    /* scrolled state: your brand color */
+    #navbar.scrolled {
+      background-color: #fff;
+      color: #fff ;
+    }
+  </style>
+
+
+
+  <nav id="navbar" class="b  bg-transparent shadow-xl sticky top-0 z-10">
+  
     <div class="w-full max-w-6xl mx-auto px-4">
-        <div class="sm:flex justify-between items-center py-6 text-center ">
-        <div class="sm:border-r border-[#000] sm:pr-[300px] ">
-<a href="#" class="text-[#fff] text-xl sm:text-5xl font-bold "><span class="maruf  text-[#b71540]">M</span><span class="text-[#000]  ">aruf web cod</span><span class="text-[#b71540]  ">ers</span></a>
+      <div class="sm:flex justify-between items-center py-6 text-center">
+        <div ">
+          <a href="#" class="text-[#fff] text-5xl sm:text-5xl font-bold">
+            <span class="maruf text-[#b71540]">M</span><span class="text-[#000]">aruf web cod</span>
+            <span class="text-[#b71540]">ers</span>
+          </a>
         </div>
-        
-<ul class="sm:flex text-[#000]  text-[20px] transition hover:animate-pulse font-bold text-center border-t sm:border-none border-[#b71540] mt-3 ">
-
-    <a href="" class="border-effct "><li><a href="#" class="p-3 text-[#b71540]">home</a></li></a> 
- <li><a href="#" class="p-3  hover:text-[#b71540] " >blogs</a></li>
- <li><a href="#"  class="p-3 hover:text-[#b71540]">Portfolio</a></li>
-<li> <a href="#"  class="p-3 hover:text-[#b71540]">contact</a></li>
-   
-</ul>
-    
+      <img class="w-[7%] mx-[5px] rounded-lg animate-pulse"  src="img/mlog.png" alt="">
+        <ul class="sm:flex text-[#000] text-[25px] sm:text-[22px]    font-bold mt-3 sm:mt-0">
+          <li><a href="#" class="p-3 text-[#b71540]">home</a></li>
+          <li><a href="#" class="p-3 hover:text-[#b71540]">blogs</a></li>
+          <li><a href="#" class="p-3 hover:text-[#b71540]">Portfolio</a></li>
+          <li><a href="#" class="p-3 hover:text-[#b71540]">contact</a></li>
+        </ul>
+      </div>
     </div>
-</div>
-</nav>
-
-
-<header class="">
+  </nav>
+  <!-- <div style="height:2000px;"></div> -->
+   
+<header class="vb">
 
    <div class="container mx-auto sm:flex justify-around items-center text-center   sm:h-[80vh] sm:w-[96%] sm:border-[2px] sm:px-10 sm:pt-10 sm:pb-10  ">
-<div>
-<h1 class="  font text-[#24215d]  text-2xl sm:text-[79px] tracking-[5px] sm:ml-[-9px] leading-[74px] mb-5 sm:mb-15 mt-[10px] sm:mt-0">I am frontend developer</h1>
-<button class=" hover:bg-[#680f27] transition  bg-[#b71540] text-[#fff] px-5 py-2 rounded-lg  sm:rounded-full text-2xl text-center shadow-xl mb-5 mt-[-15px] sm:mt-10">Join: mydevelopertuls  <svg class="inline-block w-5 ml-5 animate-ping"     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+<div class=" bg-[]">
+<h1 class="px-3  font text-[#fff]  text-2xl sm:text-[78px]  tracking-[1px]  sm:tracking-[2px]  sm:ml-[-9px] leading-[74px] mb-5 sm:mb-15 mt-[10px] sm:mt-9 font-bold">IAM FRONT END DEDELOPER</h1>
+<button class=" hover:bg-[#680f27] transition  bg-[#1B9CFC] text-[#fff] px-5 py-2 rounded-lg  sm:rounded-full text-2xl text-center shadow-xl mb-5 mt-[-15px] sm:mt-10">Join: mydevelopertuls  <svg class="inline-block w-5 ml-5 animate-ping"     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
     <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
 
 </button>
@@ -73,8 +102,9 @@
    </div>
   
 </header>
-<main class="m w-full max-w-6xl mx-auto px-4">
-    <section class=" mt-5 sm:mt-6 ">
+
+<main class="m w-full max-w-6xl mx-auto px-4 ">
+    <section class=" my-24 ">
        
         <h2 class="text-3xl sm:text-5xl text-center mb-4 mt-16 sm:mt-10 sm:mb-10 sm:mb-6 font-bold text-[#24215d]">our Services</h2>
         <div class="grid  md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -84,7 +114,7 @@
             <p class=" text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, aperiam.</p>
             <button class="btn animate-bounce hover:animate-pulse  bg-[#b71540] hover:bg-[#22a6b3] rounded-lg px-6 mb-3 mt-3 py-1 text-[#fff]  ">upp</button>
         </div>
-        <div class="box shadow  sm:bg-[#fff]">
+        <div class="box shadow  ">
             <img class="w-1/2 mx-auto  py-5  " src="img/coder4.png" alt="">
             <h4 class=" text-[26px]  underline underline-offset-[15px] my-5 text-[#24215d] font-bold decoration-[3px] decoration-[#17c0eb]">Fronten ddeveloper</h4>
             <p class="text-[#000] text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, aperiam.</p>
