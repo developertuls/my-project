@@ -200,7 +200,7 @@ height: 2px;
    height: 400px;
    /* overflow: hidden; */
    /* border-radius: 10px; */
-   box-shadow: -4px 20px 13px rgb(226, 175, 199,0.6);
+   box-shadow: -4px 20px 8px rgba(61, 59, 60, 0.6);
 /* border: 40px solid #192a56;   */
 } 
 
@@ -290,7 +290,7 @@ transition-delay: 1.0s;
 .box:hover img{
     background: #130f40;
     box-shadow: -2px -5px 13px  #77758e;
-    border-radius: 6px;
+    border-radius: 10px;
     
 
         /* animation: pulse 2s infinite; */
@@ -328,7 +328,53 @@ h1{
   }
 
   .vb{
-    background-image: linear-gradient(to right,#1B1464,#1B1464,#6D214F,#B33771,#1B1464);
+    background-image: linear-gradient(to right,#0d0842,#363355,#192a56,#1B1464,#1B1464,#b36d97,#591e39,#1B1464);
   }
+.bt-1{
+    transition: 1.0s;
+}
 
+.nev-img{
+   /* box-shadow: -2px 18px 13px rgb(0, 0, 0,0.6);   */
+}
+
+.m{
+     /* box-shadow: -40px 18px 13px rgb(0, 0, 0,0.6); */
+}
+
+h3{
+   
+    transition: 1.0s;
+    color: #fff;
+ 
+}
+
+
+.client-h3:hover h3{
+     padding: 5px;
+      
+ background:#2f2b5a ;
+    border-radius: 8px;
+    
+}
+.client-h3:hover img{
+    animation: pulse 2s infinite;
+    cursor: pointer;
+} 
+
+.client-h3:hover{
+    box-shadow: -2px -5px 13px  #100d2d;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+
+.texttzria-bg,input{
+    background: rgb(255, 255, 255,0.6);
+    /* background: rgb(25, 42, 86,0.9); */
+}
+
+.block{
+    /* box-shadow: -2px -5px 13px  #100d2d;   */
+}
   
