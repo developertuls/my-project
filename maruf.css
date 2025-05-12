@@ -14,14 +14,14 @@
     font-family: "Big Shoulders Inline", sans-serif;
 }
 
-ul{
+.bor-deshdow{
     display: inline-block;
     position: relative;
 }
 
 
 
-ul::before,ul::after{
+.bor-deshdow::before,.bor-deshdow::after{
     content: "";
     display: block;
     position: absolute;
@@ -32,7 +32,7 @@ ul::before,ul::after{
 
 
 
- ul::after{
+ .bor-deshdow::after{
 left: 50%;
 bottom: -10px;
 
@@ -52,7 +52,7 @@ height: 2px;
 
 
 
-ul:hover::after{
+.bor-deshdow:hover::after{
     width: 100%;
     left: 0;
     
@@ -68,7 +68,7 @@ ul:hover::after{
    
 
 }
-ul:hover::before{
+.bor-deshdow:hover::before{
     width: 100%;
 
   
@@ -81,110 +81,24 @@ ul:hover::before{
 
 
 
-
-
-
-/* buttom-effect */
- /* .hover-effect{
-    display: inline-block;
-    position: relative;
-}
-
-span{
-    display: inline-block;
-    position: relative;
-}
-
-.hover-effect::before,.hover-effect::after{
-    content: "";
-    display: block;
-    position: absolute;
-    background:#62c50c ;
-    transition: 0.4s;
-   
-}
-
-span::before,span::after{
-    content: "";
-    display: block;
-    position: absolute;
-    background:#01dc08 ;
-    transition: 0.4s;
-      
-}
-
-span::before{
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 0; 
-}
-
-span::after{
-    right: 0;
-    bottom: 0;
-    width: 4px;
-    height: 0;  
-    
-}
-
-span:hover::before{
-    height: 100%;
-}
-
-span:hover::after{
-    height: 100%;
-}
-
-.hover-effect::after{
-left: 0;
-bottom: 20px;
-width: 0;
-height: 2px;
-
-} 
-.hover-effect::before{
-top: 0;
-right: 0;
-bottom: 0;
-width: 0;
-height: 2px;
-
+.over-1{
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 125vh;
+    background-image: url(img/my.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
 } 
 
-
-
-
-.hover-effect:hover::after{
-    width: 100%;
-   
-    
- 
-   
-   
-
+.bg{
+    box-sizing: border-box;
+    overflow: hidden;
+   height: 125vh; 
+   width: 100%;
+background-image: linear-gradient(to right,rgba(7, 144, 131, 0.9),rgb(27, 20, 100,0.5),rgb(27, 20, 100,0.7),rgb(27, 20, 100,0.5),rgb(24, 220, 255,0.4));
 }
-.hover-effect:hover::before{
-    width: 100%;
-  
- 
-   
-   
-
-}  */
-
-
-
-
-
-
- /* .bg::before{
-    content: "";
-    display: block;
-    position: absolute;
-    height:100vh ;
-    background: rgb(0, 0, 0,0.5);
-    width: 100%;}   */
 
 
 
@@ -328,7 +242,7 @@ h1{
   }
 
   .vb{
-    background-image: linear-gradient(to right,#0d0842,#363355,#192a56,#1B1464,#1B1464,#b36d97,#591e39,#1B1464);
+    background-image: linear-gradient(to right,#0d0842,#363355,#192a56,#1B1464,#1B1464,#D980FA,#591e39,#1B1464);
   }
 .bt-1{
     transition: 1.0s;
@@ -351,10 +265,10 @@ h3{
 
 
 .client-h3:hover h3{
-     padding: 5px;
+     /* padding: 5px; */
       
- background:#2f2b5a ;
-    border-radius: 8px;
+ /* background:#2f2b5a ; */
+    /* border-radius: 8px; */
     
 }
 .client-h3:hover img{
@@ -363,15 +277,16 @@ h3{
 } 
 
 .client-h3:hover{
-    box-shadow: -2px -5px 13px  #100d2d;
-    padding: 15px;
-    border-radius: 3px;
+    /* box-shadow: -2px -5px 13px  #100d2d; */
+    /* padding: 15px; */
+    /* border-radius: 3px; */
 }
 
 
 .texttzria-bg,input{
     background: rgb(255, 255, 255,0.6);
     /* background: rgb(25, 42, 86,0.9); */
+    background:rgb(96, 222, 219,0.6);
 }
 
 .block{
