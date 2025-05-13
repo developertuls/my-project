@@ -220,6 +220,9 @@ transition-delay: 1.0s;
         /* animation: bounce 2s infinite; */
 
 }
+
+
+
 h4{
     text-decoration: #ef5777;
     box-sizing: border-box;
@@ -242,7 +245,7 @@ h1{
   }
 
   .vb{
-    background-image: linear-gradient(to right,#0d0842,#363355,#192a56,#1B1464,#1B1464,#D980FA,#591e39,#1B1464);
+    background-image: linear-gradient(to right,#0d0842,#0e0a3d,#192a56,#1B1464,#1B1464,#D980FA,#591e39,#1B1464);
   }
 .bt-1{
     transition: 1.0s;
@@ -277,9 +280,9 @@ h3{
 } 
 
 .client-h3:hover{
-    /* box-shadow: -2px -5px 13px  #100d2d; */
-    /* padding: 15px; */
-    /* border-radius: 3px; */
+    box-shadow: -2px -5px 13px  #100d2d;
+    padding: 15px;
+    border-radius: 3px;
 }
 
 
